@@ -1,17 +1,21 @@
-name: RankUp
-main: rankup\RankUp
-version: 0.0.1
-author: owencdog1
+name: AdvancedRankup
+main: AdvanceRankup\RankUp
+version: 1.0.0
+author: TheGamerz13
 api: 3.0.0
 load: POSTWORLD
-softdepend: ["EconomyAPI", "PocketMoney", "PurePerms"]
+softdepend: ["EconomyAPI", "PurePerms"]
 permissions:
  rankup:
   default: true
+ prestige: true
   children:
     rankup.rankup:
       default: true
       description: Allow ranking up
+    prestige.prestige
+       default: true
+       description: all you to prestige when you have max rankup
     rankup.admin:
       default: op
       description: Manage RankUp and view statistics
